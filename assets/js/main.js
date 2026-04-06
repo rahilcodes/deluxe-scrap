@@ -87,4 +87,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }).catch(() => {});
     });
   });
+  // ---- Background Audio Logic ----
+  const AudioHelper = (() => {
+    const audio = document.getElementById('bg-audio');
+    const toggleBtn = document.getElementById('audio-toggle');
+    if (!audio || !toggleBtn) return;
+
+    const iconMute = toggleBtn.querySelector('.icon-mute');
+    const iconUnmute = toggleBtn.querySelector('.icon-unmute');
+    
+    // Check user preference
+    const isMuted = localStorage.getItem('scrapwala_audio_muted') === 'true';
+    if (isMuted) {
+      audio.muted = true;
+      iconMute.style.display = 'none';
+      iconUnmute.style.display = 'block';
+    } else {
+      audio.volume = 0.4; // gentle volume
+    }
+
+    // Play on first interaction if not muted
+    const tryPlay = () => {
+      if (!audio.muted) {
+        audio.play().catch(() => {});
+      }
+      ['click', 'scroll', 'touchstart'].forEach(evt => document.removeEventListener(evt, tryPlay));
+    };
+    ['click', 'scroll', 'touchstart'].forEach(evt => document.addEventListener(evt, tryPlay, { once: true, passive: true }));
+
+    // Toggle button logic
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (audio.muted || audio.paused) {
+        audio.muted = false;
+        audio.play().catch(() => {});
+        iconUnmute.style.display = 'none';
+        iconMute.style.display = 'block';
+        localStorage.setItem('scrapwala_audio_muted', 'false');
+      } else {
+        audio.muted = true;
+        audio.pause();
+        iconMute.style.display = 'none';
+        iconUnmute.style.display = 'block';
+        localStorage.setItem('scrapwala_audio_muted', 'true');
+      }
+    });
+  })();
 });

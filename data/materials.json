@@ -13,9 +13,9 @@
   {
     "id": "copper",
     "name": "Copper",
-    "rate": 450,
-    "min": 420,
-    "max": 480,
+    "rate": 800,
+    "min": 650,
+    "max": 950,
     "unit": "kg",
     "trend": "up",
     "trendLabel": "High Demand",
@@ -24,9 +24,9 @@
   {
     "id": "aluminium",
     "name": "Aluminium",
-    "rate": 102,
-    "min": 95,
-    "max": 110,
+    "rate": 150,
+    "min": 120,
+    "max": 180,
     "unit": "kg",
     "trend": "up",
     "trendLabel": "Trending",
@@ -35,9 +35,9 @@
   {
     "id": "brass",
     "name": "Brass",
-    "rate": 300,
-    "min": 280,
-    "max": 320,
+    "rate": 285,
+    "min": 220,
+    "max": 350,
     "unit": "kg",
     "trend": "stable",
     "trendLabel": "Stable",
@@ -90,12 +90,23 @@
   {
     "id": "batteries",
     "name": "Batteries",
-    "rate": 45,
-    "min": 30,
-    "max": 60,
+    "rate": 88,
+    "min": 75,
+    "max": 100,
     "unit": "piece",
-    "trend": "stable",
-    "trendLabel": "",
+    "trend": "up",
+    "trendLabel": "Updated Rate",
     "serviceSlug": null
+  },
+  {
+    "id": "two-wheeler",
+    "name": "Two Wheeler",
+    "rate": 3500,
+    "min": 2000,
+    "max": 5000,
+    "unit": "vehicle",
+    "trend": "stable",
+    "trendLabel": "Best Value",
+    "serviceSlug": "vehicle-scrap-buyers-hyderabad"
   }
 ]

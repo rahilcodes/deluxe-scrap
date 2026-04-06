@@ -1438,3 +1438,39 @@ label.form-label {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ========== AUDIO WIDGET ========== */
+.audio-toggle-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  cursor: pointer;
+  z-index: 99;
+  transition: all var(--dur-base) var(--ease-out);
+}
+
+.audio-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-color: var(--green-mid);
+  color: var(--green-mid);
+}
+
+@media (max-width: 768px) {
+  .audio-toggle-btn {
+    bottom: 84px; /* above the sticky CTA */
+    left: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}

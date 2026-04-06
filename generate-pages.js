@@ -12,7 +12,7 @@ const AREAS = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'areas.jso
 
 const HEAD_COMMON = `<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
@@ -29,13 +29,8 @@ const NAV = `<nav class="nav" id="main-nav">
 <div class="nav__item">
   <a href="../services.html">Services <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"/></svg></a>
   <div class="nav__dropdown">
-    <a href="../services/iron-scrap-buyers-hyderabad.html">Iron / Steel</a>
-    <a href="../services/copper-scrap-buyers-hyderabad.html">Copper</a>
-    <a href="../services/aluminium-scrap-buyers-hyderabad.html">Aluminium</a>
-    <a href="../services/brass-scrap-buyers-hyderabad.html">Brass</a>
-    <a href="../services/ewaste-recycling-hyderabad.html">E-Waste</a>
-    <a href="../services/paper-scrap-buyers-hyderabad.html">Paper & Books</a>
-    <a href="../services/vehicle-scrap-buyers-hyderabad.html">Vehicles</a>
+    ${SERVICES.slice(0, 10).map(s => `<a href="../services/${s.slug}.html">${s.shortTitle}</a>`).join('\n    ')}
+    <a href="../services.html" style="color:var(--green-mid);font-weight:600">View all ${SERVICES.length} Services &rarr;</a>
   </div>
 </div>
 <div class="nav__item">
@@ -60,8 +55,24 @@ const NAV = `<nav class="nav" id="main-nav">
 </nav>
 <div class="nav__mobile" id="nav-mobile">
 <a href="../index.html">Home</a>
-<a href="../services.html">Services</a>
-<a href="../index.html#areas">Locations</a>
+<div class="nav__mobile-item">
+  <a href="#" class="nav__mobile-trigger">Services</a>
+  <div class="nav__mobile-dropdown">
+    ${SERVICES.slice(0, 8).map(s => `<a href="../services/${s.slug}.html">${s.shortTitle}</a>`).join('\n    ')}
+    <a href="../services.html" style="font-weight:700;color:var(--green-mid)">View all Services &rarr;</a>
+  </div>
+</div>
+<div class="nav__mobile-item">
+  <a href="#" class="nav__mobile-trigger">Locations</a>
+  <div class="nav__mobile-dropdown">
+    <a href="../areas/scrap-buyers-kavadiguda.html">Kavadiguda</a>
+    <a href="../areas/scrap-buyers-gachibowli.html">Gachibowli</a>
+    <a href="../areas/scrap-buyers-madhapur.html">Madhapur</a>
+    <a href="../areas/scrap-buyers-secunderabad.html">Secunderabad</a>
+    <a href="../areas/scrap-buyers-banjara-hills.html">Banjara Hills</a>
+    <a href="../index.html#areas" style="font-weight:700;color:var(--green-mid)">View all 30+ Areas &rarr;</a>
+  </div>
+</div>
 <a href="../about.html">About</a>
 <a href="../contact.html">Contact</a>
 <a href="../index.html#booking" class="btn btn--primary btn--full">Book Free Pickup</a>
@@ -86,8 +97,8 @@ function buildFooter() {
     <a href="mailto:scrapwala95@gmail.com" class="footer__contact-link"><svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> scrapwala95@gmail.com</a>
   </div>
 </div>
-<div><div class="footer__col-title">Services</div><div class="footer__links">${SERVICES.slice(0,7).map(s=>`<a href="../services/${s.slug}.html">${s.shortTitle}</a>`).join('')}</div></div>
-<div><div class="footer__col-title">Areas</div><div class="footer__links">${AREAS.slice(0,7).map(a=>`<a href="../areas/scrap-buyers-${a.slug}.html">${a.name}</a>`).join('')}</div></div>
+<div><div class="footer__col-title">Services</div><div class="footer__links">${SERVICES.slice(0, 10).map(s=>`<a href="../services/${s.slug}.html">${s.shortTitle}</a>`).join('')}</div></div>
+<div><div class="footer__col-title">Areas</div><div class="footer__links">${AREAS.slice(0, 10).map(a=>`<a href="../areas/scrap-buyers-${a.slug}.html">${a.name}</a>`).join('')}</div></div>
 <div><div class="footer__col-title">Quick Links</div><div class="footer__links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../services.html">All Services</a><a href="../contact.html">Contact</a><a href="../index.html#calculator">Price Calculator</a><a href="../index.html#faq">FAQ</a></div></div>
 </div>
 <div class="footer__bottom"><span>© 2025 Scrapwala Hyderabad. All rights reserved.</span><div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
@@ -251,6 +262,16 @@ ${NAV}
 </section>
 
 ${buildFooter()}
+<!-- AUDIO WIDGET -->
+<div class="audio-widget">
+  <audio id="bg-audio" loop preload="none">
+    <source src="../assets/audio/ambient-loop.mp3" type="audio/mpeg">
+  </audio>
+  <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle background music">
+    <svg class="icon-mute" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+    <svg class="icon-unmute" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+  </button>
+</div>
 ${buildScripts(['faq', 'form'])}
 </body>
 </html>`;
@@ -383,6 +404,16 @@ ${NAV}
 </section>
 
 ${buildFooter()}
+<!-- AUDIO WIDGET -->
+<div class="audio-widget">
+  <audio id="bg-audio" loop preload="none">
+    <source src="../assets/audio/ambient-loop.mp3" type="audio/mpeg">
+  </audio>
+  <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle background music">
+    <svg class="icon-mute" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+    <svg class="icon-unmute" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+  </button>
+</div>
 ${buildScripts(['faq', 'form'])}
 </body>
 </html>`;

@@ -27,7 +27,18 @@ const Nav = (() => {
     // Close mobile menu on link click
     if (mobileMenu) {
       mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', closeMenu);
+        if (!link.classList.contains('nav__mobile-trigger')) {
+          link.addEventListener('click', closeMenu);
+        }
+      });
+
+      // Mobile Accordion Toggles
+      mobileMenu.querySelectorAll('.nav__mobile-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          const item = trigger.closest('.nav__mobile-item');
+          if (item) item.classList.toggle('open');
+        });
       });
     }
 
