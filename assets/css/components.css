@@ -1288,10 +1288,10 @@
 }
 .contact-item__value:hover { color: var(--green); }
 
-.footer .contact-item__icon { color: var(--green-light); }
-.footer .contact-item__label { color: rgba(255,255,255,0.5); }
-.footer .contact-item__value { color: var(--white); }
-.footer .contact-item__value:hover { color: var(--green-light); }
+.footer .contact-item__icon, .contact-bar .contact-item__icon { color: var(--green-light); }
+.footer .contact-item__label, .contact-bar .contact-item__label { color: rgba(255,255,255,0.7); }
+.footer .contact-item__value, .contact-bar .contact-item__value { color: var(--white); }
+.footer .contact-item__value:hover, .contact-bar .contact-item__value:hover { color: var(--green-light); }
 
 /* ===== FOOTER ===== */
 .footer {
