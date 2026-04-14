@@ -24,9 +24,9 @@
 .story-body p{font-family:var(--font-body);font-size:.94rem;line-height:1.8;color:rgba(240,236,228,.6)}
 .story-body strong{color:var(--cream)}
 .story-right{display:flex;flex-direction:column;gap:20px}
-.story-stat{background:var(--grey-dark);border:1px solid var(--grey-line);border-left:3px solid var(--red);border-radius:3px;padding:28px 32px;transition:border-left-color .3s}
+.story-stat{background:var(--grey-dark);border:1px solid var(--grey-line);border-left:3px solid var(--green);border-radius:3px;padding:28px 32px;transition:border-left-color .3s}
 .story-stat:hover{border-left-color:var(--gold)}
-.story-stat__num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--red);line-height:1}
+.story-stat__num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--green);line-height:1}
 .story-stat__label{font-family:var(--font-body);font-size:.8rem;color:var(--text-muted);margin-top:6px;letter-spacing:.08em;text-transform:uppercase}
 .values-section{background:var(--grey-dark);padding:var(--section-pad)}
 .values-header{text-align:center;margin-bottom:60px}
@@ -35,10 +35,10 @@
 .values-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
 .value-block{background:var(--charcoal);padding:44px 36px;position:relative;overflow:hidden;transition:background .3s}
 .value-block:hover{background:#1e0e0e}
-.value-block::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.value-block::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .4s}
 .value-block:hover::before{transform:scaleX(1)}
-.value-block__icon{width:56px;height:56px;border-radius:3px;background:rgba(193,18,31,.1);border:1px solid rgba(193,18,31,.25);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
-.value-block__icon svg{width:26px;height:26px;stroke:var(--red);fill:none;stroke-width:1.5}
+.value-block__icon{width:56px;height:56px;border-radius:3px;background:rgba(30,132,73,.1);border:1px solid rgba(30,132,73,.25);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.value-block__icon svg{width:26px;height:26px;stroke:var(--green);fill:none;stroke-width:1.5}
 .value-block__title{font-family:var(--font-display);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:12px;letter-spacing:.02em}
 .value-block__desc{font-family:var(--font-body);font-size:.87rem;line-height:1.7;color:rgba(240,236,228,.5)}
 .reviews-section{background:var(--black);padding:var(--section-pad)}
@@ -227,17 +227,17 @@
     <div class="review-card reveal">
       <div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
       <p class="review-text">"Absolutely the best scrap buyers in Hyderabad. They came within 2 hours, everything was weighed openly, and they paid via GPay instantly. Very reliable."</p>
-      <div class="review-author"><div class="review-avatar" style="background:#C1121F;">RK</div><div><div class="review-author-name">Ravi Kumar</div><div class="review-author-verified">Google · 2 weeks ago</div></div></div>
+      <div class="review-author"><div class="review-avatar" style="background:#1e8449;">RK</div><div><div class="review-author-name">Ravi Kumar</div><div class="review-author-verified">Google · 2 weeks ago</div></div></div>
     </div>
     <div class="review-card reveal reveal-delay-1">
       <div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
       <p class="review-text">"Sold copper wire and old AC parts. Price was exactly as quoted on phone. Team was polite and professional. Highly recommend Deluxe Scrap Buyers!"</p>
-      <div class="review-author"><div class="review-avatar" style="background:#8B0000;">SP</div><div><div class="review-author-name">Sunitha Prasad</div><div class="review-author-verified">Google · 1 month ago</div></div></div>
+      <div class="review-author"><div class="review-avatar" style="background:#145A32;">SP</div><div><div class="review-author-name">Sunitha Prasad</div><div class="review-author-verified">Google · 1 month ago</div></div></div>
     </div>
     <div class="review-card reveal reveal-delay-2">
       <div class="review-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
       <p class="review-text">"No drama, no bargaining. Fair rate, transparent weighing, payment in cash. This is how a scrap business should operate. 5 stars without hesitation."</p>
-      <div class="review-author"><div class="review-avatar" style="background:#5a0000;">MR</div><div><div class="review-author-name">Mohammed Rizwan</div><div class="review-author-verified">Google · 3 weeks ago</div></div></div>
+      <div class="review-author"><div class="review-avatar" style="background:#0E4023;">MR</div><div><div class="review-author-name">Mohammed Rizwan</div><div class="review-author-verified">Google · 3 weeks ago</div></div></div>
     </div>
   </div>
 </section>

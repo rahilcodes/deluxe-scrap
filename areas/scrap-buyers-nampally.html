@@ -23,15 +23,15 @@
 .area-features{display:flex;flex-direction:column;gap:0;margin-top:36px}
 .area-feature{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--grey-line)}
 .area-feature:first-child{border-top:1px solid var(--grey-line)}
-.area-feature__icon{width:44px;height:44px;border-radius:3px;background:rgba(193,18,31,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.area-feature__icon svg{width:20px;height:20px;stroke:var(--red);fill:none;stroke-width:1.5}
+.area-feature__icon{width:44px;height:44px;border-radius:3px;background:rgba(30,132,73,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.area-feature__icon svg{width:20px;height:20px;stroke:var(--green);fill:none;stroke-width:1.5}
 .area-feature__title{font-family:var(--font-display);font-size:1.1rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:4px}
 .area-feature p{font-family:var(--font-body);font-size:.85rem;line-height:1.6;color:rgba(240,236,228,.5)}
 .services-mini{background:var(--grey-dark);padding:var(--section-pad)}
 .svc-mini-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
 .svc-mini-card{background:var(--charcoal);padding:32px 28px;position:relative;overflow:hidden;transition:background .3s}
 .svc-mini-card:hover{background:#1e0e0e}
-.svc-mini-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc-mini-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .svc-mini-card:hover::before{transform:scaleX(1)}
 .svc-mini-card__title{font-family:var(--font-display);font-size:1.3rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:6px}
 .svc-mini-card__rate{font-family:var(--font-body);font-size:.78rem;color:var(--gold)}
@@ -41,7 +41,7 @@
 .nearby-section{background:var(--black);padding:80px 24px}
 .nearby-grid{max-width:var(--max-w);margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;justify-content:center}
 .nearby-pill{padding:10px 20px;border:1px solid var(--grey-line);border-radius:2px;font-family:var(--font-body);font-size:.82rem;color:rgba(240,236,228,.6);transition:all .25s}
-.nearby-pill:hover{border-color:rgba(193,18,31,.5);color:var(--red-light);background:rgba(193,18,31,.06)}
+.nearby-pill:hover{border-color:rgba(30,132,73,.5);color:var(--green-light);background:rgba(30,132,73,.06)}
 @media(max-width:1024px){.area-grid{grid-template-columns:1fr;gap:48px}.svc-mini-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.svc-mini-grid{grid-template-columns:1fr}}
 </style>
@@ -102,7 +102,7 @@
     <p class="hero-inner__desc">Looking for reliable scrap buyers near Nampally? Deluxe Scrap Buyers offers same-day pickup, certified digital weighing, and instant UPI payment — right in your neighbourhood. Best rated scrap buyers covering all of Nampally and Gandhi Bhavan area.</p>
     <div class="hero-inner__cta">
       <a href="tel:+917093397598" class="btn-solid"><svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call 070933 97598</a>
-      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20Nampally%20Hyderabad.%20Please%20visit%20my%20address." class="btn-outline-red" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.39-1.584l-.39-.234-3.307 1.106 1.107-3.303-.254-.404A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp for Pickup</a>
+      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20Nampally%20Hyderabad.%20Please%20visit%20my%20address." class="btn-outline-green" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.39-1.584l-.39-.234-3.307 1.106 1.107-3.303-.254-.404A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp for Pickup</a>
     </div>
   </div>
 </section>
@@ -143,7 +143,7 @@
         <div style="font-family:var(--font-body);font-size:.82rem;color:var(--gold);">5.0 · 123 Google Reviews</div>
         <hr style="border:none;border-top:1px solid var(--grey-line);margin:20px 0;">
         <a href="tel:+917093397598" class="btn-solid" style="width:100%;justify-content:center;margin-bottom:12px;"><svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call Now</a>
-        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20Nampally." class="btn-outline-red" style="width:100%;justify-content:center;" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.39-1.584l-.39-.234-3.307 1.106 1.107-3.303-.254-.404A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp</a>
+        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20Nampally." class="btn-outline-green" style="width:100%;justify-content:center;" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.917.918l4.462-1.494A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 01-5.39-1.584l-.39-.234-3.307 1.106 1.107-3.303-.254-.404A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp</a>
       </div>
     </div>
   </div>
@@ -184,7 +184,7 @@
   </div>
   <div class="nearby-grid">
     <a href="../areas/scrap-buyers-musheerabad.html" class="nearby-pill">Scrap Buyers in Musheerabad</a><a href="../areas/scrap-buyers-bholakpur.html" class="nearby-pill">Scrap Buyers in Bholakpur</a><a href="../areas/scrap-buyers-secunderabad.html" class="nearby-pill">Scrap Buyers in Secunderabad</a><a href="../areas/scrap-buyers-kavadiguda.html" class="nearby-pill">Scrap Buyers in Kavadiguda</a><a href="../areas/scrap-buyers-begumpet.html" class="nearby-pill">Scrap Buyers in Begumpet</a><a href="../areas/scrap-buyers-ameerpet.html" class="nearby-pill">Scrap Buyers in Ameerpet</a>
-    <a href="../contact.html" class="nearby-pill" style="border-color:rgba(193,18,31,.3);color:var(--red-light);">View All Areas →</a>
+    <a href="../contact.html" class="nearby-pill" style="border-color:rgba(30,132,73,.3);color:var(--green-light);">View All Areas →</a>
   </div>
 </section>
 

@@ -20,11 +20,11 @@
 .srv-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
 .srv-card{background:var(--grey-dark);padding:44px 40px;position:relative;overflow:hidden;transition:background .3s;display:flex;flex-direction:column}
 .srv-card:hover{background:#1e0e0e}
-.srv-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.srv-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .4s}
 .srv-card:hover::before{transform:scaleX(1)}
-.srv-card__icon{width:58px;height:58px;border-radius:3px;background:rgba(193,18,31,.1);border:1px solid rgba(193,18,31,.25);display:flex;align-items:center;justify-content:center;margin-bottom:24px;transition:background .3s,border-color .3s}
-.srv-card:hover .srv-card__icon{background:rgba(193,18,31,.2);border-color:rgba(193,18,31,.5)}
-.srv-card__icon svg{width:26px;height:26px;stroke:var(--red);fill:none;stroke-width:1.5}
+.srv-card__icon{width:58px;height:58px;border-radius:3px;background:rgba(30,132,73,.1);border:1px solid rgba(30,132,73,.25);display:flex;align-items:center;justify-content:center;margin-bottom:24px;transition:background .3s,border-color .3s}
+.srv-card:hover .srv-card__icon{background:rgba(30,132,73,.2);border-color:rgba(30,132,73,.5)}
+.srv-card__icon svg{width:26px;height:26px;stroke:var(--green);fill:none;stroke-width:1.5}
 .srv-card__title{font-family:var(--font-display);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:12px;letter-spacing:.02em}
 .srv-card__desc{font-family:var(--font-body);font-size:.87rem;line-height:1.7;color:rgba(240,236,228,.5);flex:1}
 .srv-card__rate{display:inline-block;margin-top:20px;font-family:var(--font-body);font-size:.75rem;font-weight:600;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;transition:color .25s}
@@ -35,7 +35,7 @@
 .how-mini-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px}
 .hw-step{padding:36px 28px;border-right:1px solid var(--grey-line);text-align:center}
 .hw-step:last-child{border-right:none}
-.hw-num{font-family:var(--font-display);font-size:4rem;font-weight:900;color:rgba(193,18,31,.15);line-height:1;margin-bottom:12px}
+.hw-num{font-family:var(--font-display);font-size:4rem;font-weight:900;color:rgba(30,132,73,.15);line-height:1;margin-bottom:12px}
 .hw-title{font-family:var(--font-display);font-size:1.3rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:8px}
 .hw-desc{font-family:var(--font-body);font-size:.83rem;line-height:1.65;color:rgba(240,236,228,.5)}
 .faq-section{background:var(--grey-dark);padding:var(--section-pad)}
@@ -148,7 +148,7 @@
       <p class="srv-card__desc">HDPE, PET, PVC bottles, containers, pipes, plastic furniture. All grades of plastic purchased at fair market rates.</p>
       <span class="srv-card__rate">₹12–18/kg · View Details</span>
     </a>
-    <div class="srv-card reveal reveal-delay-2" style="cursor:default;border:1px dashed rgba(193,18,31,.2);">
+    <div class="srv-card reveal reveal-delay-2" style="cursor:default;border:1px dashed rgba(30,132,73,.2);">
       <div class="srv-card__icon" style="background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.25);"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
       <div class="srv-card__title" style="color:var(--gold);">More Materials</div>
       <p class="srv-card__desc">Aluminium, batteries, old vehicles, mixed scrap, construction materials. If it's scrap — we likely buy it. Call us to confirm.</p>

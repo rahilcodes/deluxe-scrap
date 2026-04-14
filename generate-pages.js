@@ -301,10 +301,10 @@ function generateServicePage(svc) {
 .svc-detail-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
 .items-list{margin-top:0;display:flex;flex-direction:column;gap:0}
 .items-list li{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);font-family:var(--font-body);font-size:.9rem;color:rgba(240,236,228,.7)}
-.items-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0}
-.rate-badge{background:rgba(193,18,31,.12);border:1px solid rgba(193,18,31,.3);border-radius:3px;padding:24px 28px;margin-bottom:24px}
+.items-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+.rate-badge{background:rgba(30,132,73,.12);border:1px solid rgba(30,132,73,.3);border-radius:3px;padding:24px 28px;margin-bottom:24px}
 .rate-badge__label{font-family:var(--font-body);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px}
-.rate-badge__num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--red);line-height:1}
+.rate-badge__num{font-family:var(--font-display);font-size:3rem;font-weight:900;color:var(--green);line-height:1}
 .rate-badge__sub{font-family:var(--font-body);font-size:.82rem;color:var(--text-muted);margin-top:6px}
 .why-box{background:var(--grey-dark);border:1px solid var(--grey-line);border-radius:3px;padding:28px;margin-top:20px}
 .why-box__title{font-family:var(--font-display);font-size:1.2rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:10px}
@@ -314,7 +314,7 @@ function generateServicePage(svc) {
 .related-section{background:var(--black);padding:80px 24px}
 .related-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
 .related-card{background:var(--grey-dark);border:1px solid var(--grey-line);border-radius:3px;padding:24px 20px;transition:border-color .25s,transform .25s}
-.related-card:hover{border-color:rgba(193,18,31,.4);transform:translateY(-3px)}
+.related-card:hover{border-color:rgba(30,132,73,.4);transform:translateY(-3px)}
 .related-card__title{font-family:var(--font-display);font-size:1.2rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:6px}
 .related-card__rate{font-family:var(--font-body);font-size:.78rem;color:var(--gold)}
 @media(max-width:1024px){.svc-detail-grid{grid-template-columns:1fr;gap:48px}.related-grid{grid-template-columns:1fr 1fr}}
@@ -337,7 +337,7 @@ ${header('services', '../')}
     <p class="hero-inner__desc">${svc.heroDesc}</p>
     <div class="hero-inner__cta">
       <a href="tel:+917093397598" class="btn-solid">${CALL_SVG}Call for Best Price</a>
-      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20${encodeURIComponent(svc.overline)}%20scrap.%20Please%20visit%20my%20address." class="btn-outline-red" target="_blank" rel="noopener">${WA_SVG}WhatsApp Us</a>
+      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20${encodeURIComponent(svc.overline)}%20scrap.%20Please%20visit%20my%20address." class="btn-outline-green" target="_blank" rel="noopener">${WA_SVG}WhatsApp Us</a>
     </div>
   </div>
 </section>
@@ -355,7 +355,7 @@ ${trustBar()}
       </ul>
       <div style="margin-top:36px;display:flex;gap:12px;flex-wrap:wrap;">
         <a href="tel:+917093397598" class="btn-solid">${CALL_SVG}070933 97598</a>
-        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20${encodeURIComponent(svc.overline)}%20scrap." class="btn-outline-red" target="_blank" rel="noopener">${WA_SVG}WhatsApp</a>
+        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20${encodeURIComponent(svc.overline)}%20scrap." class="btn-outline-green" target="_blank" rel="noopener">${WA_SVG}WhatsApp</a>
       </div>
     </div>
     <div class="reveal">
@@ -478,15 +478,15 @@ function generateAreaPage(area) {
 .area-features{display:flex;flex-direction:column;gap:0;margin-top:36px}
 .area-feature{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--grey-line)}
 .area-feature:first-child{border-top:1px solid var(--grey-line)}
-.area-feature__icon{width:44px;height:44px;border-radius:3px;background:rgba(193,18,31,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.area-feature__icon svg{width:20px;height:20px;stroke:var(--red);fill:none;stroke-width:1.5}
+.area-feature__icon{width:44px;height:44px;border-radius:3px;background:rgba(30,132,73,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.area-feature__icon svg{width:20px;height:20px;stroke:var(--green);fill:none;stroke-width:1.5}
 .area-feature__title{font-family:var(--font-display);font-size:1.1rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:4px}
 .area-feature p{font-family:var(--font-body);font-size:.85rem;line-height:1.6;color:rgba(240,236,228,.5)}
 .services-mini{background:var(--grey-dark);padding:var(--section-pad)}
 .svc-mini-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px}
 .svc-mini-card{background:var(--charcoal);padding:32px 28px;position:relative;overflow:hidden;transition:background .3s}
 .svc-mini-card:hover{background:#1e0e0e}
-.svc-mini-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc-mini-card::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .svc-mini-card:hover::before{transform:scaleX(1)}
 .svc-mini-card__title{font-family:var(--font-display);font-size:1.3rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:6px}
 .svc-mini-card__rate{font-family:var(--font-body);font-size:.78rem;color:var(--gold)}
@@ -496,7 +496,7 @@ function generateAreaPage(area) {
 .nearby-section{background:var(--black);padding:80px 24px}
 .nearby-grid{max-width:var(--max-w);margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;justify-content:center}
 .nearby-pill{padding:10px 20px;border:1px solid var(--grey-line);border-radius:2px;font-family:var(--font-body);font-size:.82rem;color:rgba(240,236,228,.6);transition:all .25s}
-.nearby-pill:hover{border-color:rgba(193,18,31,.5);color:var(--red-light);background:rgba(193,18,31,.06)}
+.nearby-pill:hover{border-color:rgba(30,132,73,.5);color:var(--green-light);background:rgba(30,132,73,.06)}
 @media(max-width:1024px){.area-grid{grid-template-columns:1fr;gap:48px}.svc-mini-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.svc-mini-grid{grid-template-columns:1fr}}
 </style>
@@ -516,7 +516,7 @@ ${header('', '../')}
     <p class="hero-inner__desc">Looking for reliable scrap buyers near ${area.name}? Deluxe Scrap Buyers offers same-day pickup, certified digital weighing, and instant UPI payment — right in your neighbourhood. ${area.desc}</p>
     <div class="hero-inner__cta">
       <a href="tel:+917093397598" class="btn-solid">${CALL_SVG}Call 070933 97598</a>
-      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20${encodeURIComponent(area.name)}%20Hyderabad.%20Please%20visit%20my%20address." class="btn-outline-red" target="_blank" rel="noopener">${WA_SVG}WhatsApp for Pickup</a>
+      <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20${encodeURIComponent(area.name)}%20Hyderabad.%20Please%20visit%20my%20address." class="btn-outline-green" target="_blank" rel="noopener">${WA_SVG}WhatsApp for Pickup</a>
     </div>
   </div>
 </section>
@@ -557,7 +557,7 @@ ${trustBar()}
         <div style="font-family:var(--font-body);font-size:.82rem;color:var(--gold);">5.0 · 123 Google Reviews</div>
         <hr style="border:none;border-top:1px solid var(--grey-line);margin:20px 0;">
         <a href="tel:+917093397598" class="btn-solid" style="width:100%;justify-content:center;margin-bottom:12px;">${CALL_SVG}Call Now</a>
-        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20${encodeURIComponent(area.name)}." class="btn-outline-red" style="width:100%;justify-content:center;" target="_blank" rel="noopener">${WA_SVG}WhatsApp</a>
+        <a href="https://wa.me/917093397598?text=Hi%2C%20I%20want%20to%20sell%20scrap%20in%20${encodeURIComponent(area.name)}." class="btn-outline-green" style="width:100%;justify-content:center;" target="_blank" rel="noopener">${WA_SVG}WhatsApp</a>
       </div>
     </div>
   </div>
@@ -598,7 +598,7 @@ ${trustBar()}
   </div>
   <div class="nearby-grid">
     ${otherAreas.map(a => `<a href="../areas/scrap-buyers-${a.slug}.html" class="nearby-pill">Scrap Buyers in ${a.name}</a>`).join('')}
-    <a href="../contact.html" class="nearby-pill" style="border-color:rgba(193,18,31,.3);color:var(--red-light);">View All Areas →</a>
+    <a href="../contact.html" class="nearby-pill" style="border-color:rgba(30,132,73,.3);color:var(--green-light);">View All Areas →</a>
   </div>
 </section>
 
