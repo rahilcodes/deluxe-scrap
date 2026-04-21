@@ -25,7 +25,8 @@ function header(active, depth='') {
           <a href="${d}services/ewaste-recycling-hyderabad.html">E-Waste &amp; Electronics</a>
           <a href="${d}services/paper-scrap-buyers-hyderabad.html">Paper &amp; Cardboard</a>
           <a href="${d}services/plastic-scrap-buyers-hyderabad.html">Plastic Scrap</a>
-          <a href="${d}services/copper-scrap-buyers-hyderabad.html">Copper &amp; Brass</a>
+          <a href="${d}services/copper-scrap-buyers-hyderabad.html">Copper Scrap</a>
+          <a href="${d}services/brass-scrap-buyers-hyderabad.html">Brass Scrap</a>
           <a href="${d}services.html" style="color:var(--gold);font-weight:600;">All Services →</a>
         </div>
       </div>
@@ -100,7 +101,8 @@ function footer(depth='') {
         <li><a href="${d}services/ewaste-recycling-hyderabad.html">E-Waste</a></li>
         <li><a href="${d}services/paper-scrap-buyers-hyderabad.html">Paper &amp; Cardboard</a></li>
         <li><a href="${d}services/plastic-scrap-buyers-hyderabad.html">Plastic Scrap</a></li>
-        <li><a href="${d}services/copper-scrap-buyers-hyderabad.html">Copper &amp; Brass</a></li>
+        <li><a href="${d}services/copper-scrap-buyers-hyderabad.html">Copper Scrap</a></li>
+        <li><a href="${d}services/brass-scrap-buyers-hyderabad.html">Brass Scrap</a></li>
       </ul>
     </div>
     <div>
@@ -214,19 +216,36 @@ const services = [
   },
   {
     slug: 'copper-scrap-buyers-hyderabad',
-    title: 'Copper & Brass Scrap Buyers in Hyderabad | Best Price ₹420–480/kg | Deluxe',
-    desc: 'Best copper scrap buyers in Hyderabad. We pay ₹420–480/kg for copper wire, pipes, coils. Brass fittings ₹280–320/kg. Same-day pickup. Digital weighing. Instant payment. Call 070933 97598.',
+    title: 'Copper Scrap Buyers in Hyderabad | Highest Price ₹680-₹940/kg',
+    desc: 'Best copper scrap buyers in Hyderabad. We pay ₹680-₹940/kg for copper wire, pipes, coils, and sheets. Same-day pickup. Digital weighing. Call 070933 97598.',
     canonical: 'https://deluxescrap.in/services/copper-scrap-buyers-hyderabad.html',
-    overline: 'Copper & Brass',
-    h1: 'Copper & Brass Scrap<br><span class="accent">Highest Price in Hyderabad.</span>',
-    heroDesc: 'Copper is the most valuable common scrap metal — and we pay the highest rates in Hyderabad. Copper wire, pipes, coils, brass fittings, bronze items — we buy everything at current market rate, confirmed by digital weighing.',
-    rate: '₹420–480/kg',
-    items: ['Copper wire & cables', 'Copper pipes & tubes', 'Copper coils (AC, refrigerator)', 'Brass taps & fittings', 'Bronze items & decoration', 'Copper sheets & plates', 'Mixed copper scrap', 'Old electrical windings'],
-    why: 'Copper is the highest-value non-ferrous metal. At Deluxe Scrap, we understand copper grades and pay you the exact market price — not a discounted "local rate". Our certified digital scales ensure you get every rupee you deserve.',
+    overline: 'Copper Scrap',
+    h1: 'Copper Scrap<br><span class="accent">Highest Price in Hyderabad.</span>',
+    heroDesc: 'Copper is the most valuable common scrap metal — and we pay the absolute highest rates in Hyderabad. Copper wire, pipes, coils, sheets — we buy everything at current market rate, evaluated on the spot.',
+    rate: '₹680–940/kg',
+    items: ['Copper wire & cables', 'Copper pipes & tubes', 'Copper coils (AC, refrigerator)', 'Copper sheets & plates', 'Mixed copper scrap', 'Old electrical windings', 'Armature scrap', 'Insulated copper cables'],
+    why: 'Copper is the highest-value non-ferrous metal. At Deluxe Scrap, we understand copper grades (Berry, Candy, Barley) and pay you the exact market price. Our certified digital scales ensure you get every rupee you deserve.',
     faq: [
-      { q: 'What is the current copper scrap rate in Hyderabad?', a: 'Current copper scrap rate is ₹420–480 per kg depending on grade and purity. Brass is ₹280–320/kg. Call 070933 97598 for today\'s live rate.' },
-      { q: 'Do you buy AC copper coils?', a: 'Yes! AC copper coils are high-value scrap. We buy them whole — no need to dismantle. Our team handles the entire process.' },
-      { q: 'What is the difference between copper and brass rates?', a: 'Copper is nearly pure and fetches ₹420–480/kg. Brass is an alloy (copper + zinc) and fetches ₹280–320/kg. We correctly identify each material and pay accordingly.' },
+      { q: 'What is the current copper scrap rate in Hyderabad?', a: 'Current copper scrap rate is ₹680–940 per kg depending on grade (wire vs pipe) and purity. Call 070933 97598 for today\'s live rate.' },
+      { q: 'Do you buy AC copper coils?', a: 'Yes! AC copper coils are extremely valuable. We buy them whole — no need to dismantle them yourself. Our team handles the entire process.' },
+      { q: 'Why is the price range so wide?', a: 'The price depends entirely on the copper quality. Shining, stripped wire fetches the highest rate, while mixed or burnt copper has lower purity and a slightly reduced rate.' },
+    ]
+  },
+  {
+    slug: 'brass-scrap-buyers-hyderabad',
+    title: 'Brass Scrap Buyers in Hyderabad | Best Price ₹190-₹540/kg',
+    desc: 'Selling brass in Hyderabad? We buy brass fittings, taps, decor, and mixed brass at ₹190-₹540/kg. Free doorstep pickup & instant payment. Call Deluxe Scrap buyers.',
+    canonical: 'https://deluxescrap.in/services/brass-scrap-buyers-hyderabad.html',
+    overline: 'Brass Scrap',
+    h1: 'Brass Scrap<br><span class="accent">Accurate Valuation.</span>',
+    heroDesc: 'If you have heavy brass items, taps, old utensils, or industrial brass parts, Deluxe Scrap Buyers offers the highest market rate for brass in Hyderabad. Distinctly separated from copper for maximum accuracy.',
+    rate: '₹190–540/kg',
+    items: ['Brass taps, plumbing & fittings', 'Brass utensils & decor', 'Engine parts & industrial brass', 'Brass turnings & borings', 'Mixed yellow brass', 'Brass radiators', 'Bullet shells (fired)', 'Bronze items'],
+    why: 'Brass is an alloy of copper and zinc. Unprofessional buyers often underpay by confusing brass grades. We clearly distinguish between yellow and red brass to offer you exactly what your scrap is worth.',
+    faq: [
+      { q: 'What is the current brass scrap rate in Hyderabad?', a: 'The current brass scrap rate ranges from ₹190 to ₹540 per kg, heavily determined by the type (Honey, Ocean, etc). Call 070933 97598 for today\'s exact rate.' },
+      { q: 'How do you tell the difference between brass and copper?', a: 'Brass has a distinct yellowish/gold tint, whereas copper is pure red/orange. Since brass contains zinc, it is slightly less valuable than pure copper.' },
+      { q: 'Do you pick up from residential areas?', a: 'Yes, we provide completely free doorstep pickup from both residential homes and commercial industrial sites across all of Hyderabad.' },
     ]
   }
 ];
